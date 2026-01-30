@@ -1,6 +1,7 @@
 {
-  "name": "@hans/vulpis",
+  "name": "@hans/vulpes",
   "version": "0.0.1",
+  "license": "MIT",
   "exports": "./src/mod.ts",
   "publish": {
     "include": ["LICENSE", "README.md", "./src/**/*.ts"],
