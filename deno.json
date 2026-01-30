@@ -1,0 +1,15 @@
+{
+  "name": "@hans/vulpis",
+  "version": "0.0.1",
+  "exports": "./src/mod.ts",
+  "publish": {
+    "include": ["LICENSE", "README.md", "./src/**/*.ts"],
+    "exclude": ["./src/**/*_test.ts"]
+  },
+  "tasks": {
+    "test": "deno test ./src/"
+  },
+  "fmt": {
+    "lineWidth": 120
+  }
+}
