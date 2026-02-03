@@ -114,14 +114,6 @@ class Some<T> extends Option<T> {
  * Variant of Option that is empty.
  */
 class None extends Option<never> {
-  // Singleton
-  private static instance: None = new None();
-
-  public constructor() {
-    if (None.instance) return None.instance;
-    super();
-  }
-
   /** @inheritdoc */
   public override match<U>({ None: handler }: { None: () => U }): U {
     return handler.call(this);
