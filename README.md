@@ -82,8 +82,6 @@ This library intentionally does **not**:
 * Enforce functional purity
 * Replace JavaScript control flow
 
----
-
 ### Summary
 
 Option and Result are small by design.
@@ -96,4 +94,14 @@ They exist to:
 * Keep APIs predictable
 
 Nothing more — and nothing less.
+
+---
+
+### Changes
+
+#### v0.0.2 
+
+- Removed methods `Option.Some`, `Option.None`, `Result.Ok` and `Result.Err`. Those methods provided
+syntactic sugar for "factories", but also produced the perfect environment to occur circular
+dependency.
 
